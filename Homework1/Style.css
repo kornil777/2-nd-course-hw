@@ -54,6 +54,10 @@ body {
   letter-spacing: 0%;
   text-align: center;
 }
+.main__button:hover {
+  background-color: white;
+  color: black;
+}
 .main__content {
   width: 769px;
   display: flex;
@@ -471,7 +475,7 @@ body {
     background-size: cover;
     align-content: center;
     height: 700px;
-    width: 343px;
+    min-width: 343px;
   }
   .main__content {
     width: 343px;
