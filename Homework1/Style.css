@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -499,7 +500,7 @@ body {
     position: absolute;
     width: 100%;
     height: 51.34px;
-    left: -6px;
+    left: 0;
     top: 649px;
     display: flex;
     justify-content: flex-start;
