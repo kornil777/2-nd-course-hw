@@ -14,6 +14,7 @@ a {
 
 body {
   font-family: "Montserrat", sans-serif;
+  width: 1440px;
 }
 
 .bold {
@@ -41,10 +42,6 @@ body {
   align-items: center;
   gap: 10;
   padding: 16px 28px 16px 28px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 48px 0px;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
@@ -56,7 +53,6 @@ body {
   line-height: 141.69%;
   letter-spacing: 0%;
   text-align: center;
-  margin-top: 48px;
 }
 .main__content {
   width: 769px;
@@ -80,7 +76,7 @@ body {
   text-align: left;
   padding-bottom: 24px;
 }
-.title_descriptionr {
+.title__description {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 24px;
@@ -152,9 +148,9 @@ body {
   position: absolute;
   width: 584.72px;
   height: 584.72px;
-  left: 933px;
-  top: 945.92px;
-  transform: rotate(-6.77deg);
+  left: 973px;
+  top: 908.92px;
+  transform: rotate(0.23deg);
 }
 .star__2 {
   position: absolute;
@@ -391,6 +387,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 1441px;
 }
 .footer__text {
   color: rgb(0, 0, 0);

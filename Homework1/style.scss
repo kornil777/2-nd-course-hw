@@ -1,7 +1,8 @@
 * {margin: 0;padding: 0;}
 ul {list-style-type: none;}
 a {text-decoration: none;}
-body {font-family: "Montserrat", sans-serif;}
+body {font-family: "Montserrat", sans-serif;
+width: 1440px;}
 .bold{font-weight: bold;}
 $background-color: rgb(32, 32, 39);
 $header-color: rgb(255, 255, 255);
@@ -25,10 +26,7 @@ justify-content: center;
 align-items: center;
 gap: 10;
 padding: 16px 28px 16px 28px;
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 48px 0px;
+
 box-sizing: border-box;
 border: 1px solid rgb(32, 32, 39);
 border-radius: 60px;
@@ -39,8 +37,7 @@ font-size: 24px;
 font-weight: 600;
 line-height: 141.69%;
 letter-spacing: 0%;
-text-align: center;
-margin-top: 48px;}
+text-align: center;}
 
 &__content{
 width: 769px;
@@ -66,7 +63,7 @@ letter-spacing: 0px;
 text-align: left;
 padding-bottom: 24px;}
 
-&_descriptionr{
+&__description{
 color: rgb(32, 32, 39);
 font-family: Montserrat;
 font-size: 24px;
@@ -144,9 +141,9 @@ width: 788px;
          position: absolute;
          width: 584.72px;
          height: 584.72px;
-         left: 933px;
-         top: 945.92px;
-         transform: rotate(-6.77deg);
+         left: 973px;
+         top: 908.92px;
+         transform: rotate(0.23deg);
          }
     &__2{
         position: absolute;
@@ -340,6 +337,7 @@ width: 788px;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        width: 1441px;
 
     &__text{
         color: rgb(0, 0, 0);
