@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -53,6 +54,10 @@ body {
   line-height: 141.69%;
   letter-spacing: 0%;
   text-align: center;
+}
+.main__button:hover {
+  background-color: white;
+  color: black;
 }
 .main__content {
   width: 769px;
@@ -406,6 +411,7 @@ body {
 @media (max-width: 767px) {
   .body {
     overflow-x: hidden;
+    min-width: 343px;
   }
   .center {
     padding-left: 16px;
@@ -471,7 +477,7 @@ body {
     background-size: cover;
     align-content: center;
     height: 700px;
-    width: 343px;
+    width: 100%;
   }
   .main__content {
     width: 343px;
@@ -492,9 +498,9 @@ body {
   }
   .stripe {
     position: absolute;
-    width: 375px;
+    width: 100%;
     height: 51.34px;
-    left: -6px;
+    left: 0;
     top: 649px;
     display: flex;
     justify-content: flex-start;
@@ -536,7 +542,7 @@ body {
     text-align: center;
   }
   .mini-games {
-    width: 343px;
+    width: 100%;
     padding-left: 16px;
     padding-right: 16px;
     overflow-x: hidden;
