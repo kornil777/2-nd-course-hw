@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 ul {
@@ -477,7 +476,6 @@ body {
     background-size: cover;
     align-content: center;
     height: 700px;
-    width: 100%;
   }
   .main__content {
     width: 343px;
@@ -542,7 +540,6 @@ body {
     text-align: center;
   }
   .mini-games {
-    width: 100%;
     padding-left: 16px;
     padding-right: 16px;
     overflow-x: hidden;
