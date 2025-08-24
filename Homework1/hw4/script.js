@@ -13,7 +13,7 @@ while (k <= 5) {
 }
 
 // Задача №3
-// let d = 7;
+let d = 7;
 while (d <= 22) {
   console.log(d);
   d++;
