@@ -125,6 +125,9 @@ body {
   text-align: left;
   text-transform: uppercase;
 }
+.stripe__starMob {
+  display: none;
+}
 
 .about {
   padding-left: 120px;
@@ -414,153 +417,21 @@ body {
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  .body {
-    overflow-x: hidden;
-    min-width: 343px;
+@media (max-width: 1240px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .star__1 {
+    display: none;
+  }
+  .game {
+    min-width: auto;
+    gap: 10px;
   }
   .star {
     display: none;
-  }
-  .mobstar {
-    display: inherit;
-  }
-  .mobstar__1 {
-    position: absolute;
-    width: 223.52px;
-    height: 238.57px;
-    right: 0;
-    left: 225px;
-    top: -63px;
-    transform: rotate(-0.32deg);
-  }
-  .mobstar__2 {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    left: 38px;
-    top: 97px;
-    box-sizing: border-box;
-  }
-  .mobstar__3 {
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    left: 92px;
-    top: 64px;
-  }
-  .mobstar__3 {
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    left: 92px;
-    top: 64px;
-    box-sizing: border-box;
-  }
-  .mobstar__4 {
-    position: absolute;
-    width: 39px;
-    height: 41px;
-    left: 304px;
-    top: 580px;
-    box-sizing: border-box;
-  }
-  .mobstar__5 {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    left: 273px;
-    top: 557px;
-  }
-  .main {
-    background-image: url(./content/Back_mobile.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-content: center;
-    height: 700px;
-  }
-  .main__content {
-    width: 343px;
-    height: 371px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 36px;
-    padding-top: 134px;
-    padding-left: 0;
-    padding-bottom: 131px;
-  }
-  .main__button {
-    width: 285px;
-    height: 55px;
-    font-size: 16px;
-  }
-  .stripe {
-    position: absolute;
-    width: 100%;
-    height: 51.34px;
-    left: 0;
-    top: 649px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 6px;
-    padding: 16px 24px 16px 24px;
-    box-sizing: border-box;
-    border: 0.54px solid rgba(255, 255, 255, 0.2);
-    -webkit-backdrop-filter: blur(26.86px);
-            backdrop-filter: blur(26.86px);
-    background: rgb(188, 236, 48);
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 16px;
-  }
-  .stripe__word {
-    font-size: 16px;
-  }
-  .about {
-    display: none;
-  }
-  .title__header {
-    color: rgb(32, 32, 39);
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 49px;
-    letter-spacing: 0px;
-    text-align: center;
-  }
-  .title__description {
-    color: rgb(32, 32, 39);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0px;
-    text-align: center;
-  }
-  .mini-games {
-    padding-left: 16px;
-    padding-right: 16px;
-    overflow-x: hidden;
-  }
-  .mini-games__header {
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 49px;
-    letter-spacing: 0px;
-    text-align: left;
-    padding-top: 16px;
-  }
-  .mini-games__content {
-    padding-top: 48px;
-    width: 343px;
-    padding-bottom: 10px;
   }
   .game-block {
     width: 343px;
@@ -614,6 +485,219 @@ body {
     padding-top: 14px;
     padding-left: 30px;
   }
+  .mini-games__content {
+    flex-direction: row;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .body {
+    overflow-x: hidden;
+    min-width: 343px;
+  }
+  .star {
+    display: none;
+  }
+  .mobstar {
+    display: inherit;
+  }
+  .mobstar__1 {
+    position: absolute;
+    width: 224px;
+    height: 239px;
+    right: -75px;
+    top: -82px;
+    transform: rotate(-0.32deg);
+  }
+  .mobstar__2 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 38px;
+    top: 97px;
+    box-sizing: border-box;
+  }
+  .mobstar__3 {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 92px;
+    top: 64px;
+  }
+  .mobstar__3 {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 92px;
+    top: 64px;
+    box-sizing: border-box;
+  }
+  .mobstar__4 {
+    position: absolute;
+    width: 39px;
+    height: 41px;
+    left: 304px;
+    top: 580px;
+    box-sizing: border-box;
+  }
+  .mobstar__5 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 273px;
+    top: 557px;
+  }
+  .main {
+    background-image: url(./content/Back_mobile.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+  .main__content {
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    padding-top: 147px;
+    padding-left: 0;
+  }
+  .main__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .stripe {
+    position: absolute;
+    width: 100%;
+    height: 51.34px;
+    left: 0;
+    top: 649px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 6px;
+    padding: 16px 24px 16px 24px;
+    box-sizing: border-box;
+    border: 0.54px solid rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(26.86px);
+            backdrop-filter: blur(26.86px);
+    background: rgb(188, 236, 48);
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .stripe__word {
+    font-size: 16px;
+  }
+  .stripe__star {
+    display: none;
+  }
+  .stripe__starMob {
+    display: block;
+  }
+  .about {
+    display: none;
+  }
+  .title__header {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .title__description {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 296px;
+  }
+  .mini-games {
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow-x: hidden;
+  }
+  .mini-games__header {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .mini-games__content {
+    padding-top: 48px;
+    width: 343px;
+    padding-bottom: 10px;
+    gap: 23px;
+    flex-direction: column;
+  }
+  .game-block {
+    width: 343px;
+    flex-direction: column-reverse;
+  }
+  .game-block__header {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 16px;
+  }
+  .game-block__heading {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 15px;
+    width: 285px;
+  }
+  .game-block__button {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    width: 285px;
+    height: 55px;
+    margin-bottom: 0;
+  }
+  .game-block__button:hover {
+    background-color: black;
+    color: white;
+  }
+  .game-block__item {
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    padding: 29px;
+    padding-top: 14px;
+    padding-left: 30px;
+  }
   .footer {
     color: rgb(0, 0, 0);
     font-family: Montserrat;
@@ -632,5 +716,9 @@ body {
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
+  }
+  .stripe__star {
+    width: 20px;
+    height: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

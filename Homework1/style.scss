@@ -131,6 +131,9 @@ $cart-background: rgb(255, 255, 255);
     text-align: left;
     text-transform: uppercase;
   }
+  &__starMob{
+    display: none;
+  }
 }
 
 // раздел об играх
@@ -416,5 +419,5 @@ $cart-background: rgb(255, 255, 255);
     text-align: center;
   }
 }
-
+@import "tablet";
 @import "mobile";

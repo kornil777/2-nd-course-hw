@@ -13,11 +13,10 @@
     display: inherit;
     &__1 {
         position: absolute;
-        width: 223.52px;
-        height: 238.57px;
-        right: 0;
-        left: 225px;
-        top: -63px;
+        width: 224px;
+        height: 239px;
+        right: -75px;
+        top: -82px;
         transform: rotate(-0.32deg);
     }
     &__2 {
@@ -64,7 +63,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    align-content: center;
+    // align-content: center;
     height: 700px;
     
     
@@ -72,15 +71,14 @@
 
     &__content {
       width: 343px;
-      height: 371px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 36px;
-      padding-top: 134px;
+      padding-top: 147px;
       padding-left: 0;
-      padding-bottom: 131px;
+      
     }
     &__button {
       width: 285px;
@@ -112,6 +110,12 @@
     &__word{
         font-size: 16px;
     }
+    &__star{
+      display: none;
+    }
+    &__starMob{
+      display: block;
+    }
     
   }
 
@@ -136,6 +140,7 @@
       line-height: 20px;
       letter-spacing: 0px;
       text-align: center;
+      width: 296px;
     }
   }
 
@@ -152,12 +157,13 @@
       line-height: 49px;
       letter-spacing: 0px;
       text-align: left;
-      padding-top: 16px;
     }
     &__content {
       padding-top: 48px;
       width: 343px;
       padding-bottom: 10px;
+      gap: 23px;
+      flex-direction: column;
     
     }
   }
@@ -183,6 +189,7 @@
       letter-spacing: 0px;
       text-align: left;
       padding-top: 15px;
+      width: 285px;
     }
     &__button {
       color: rgb(255, 255, 255);
@@ -231,5 +238,9 @@
       letter-spacing: 0px;
       text-align: center;
     }
+  }
+  .stripe__star{
+    width: 20px;
+    height: 20px;
   }
 }
