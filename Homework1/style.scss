@@ -31,9 +31,7 @@ $cart-background: rgb(255, 255, 255);
   background-size: cover;
   position: relative;
   overflow: hidden;
-  &__content {
-    padding-left: 120px;
-  }
+
   &__button {
     position: static;
     width: 247px;
@@ -117,6 +115,8 @@ $cart-background: rgb(255, 255, 255);
   align-content: center;
   flex-wrap: wrap;
   overflow: hidden;
+  left: 50%;
+  transform: translate(-50%);
 
   &__word {
     color: rgb(32, 32, 39);
@@ -308,7 +308,6 @@ $cart-background: rgb(255, 255, 255);
 .mini-games {
   background-color: $background-color;
   background-size: cover;
-  padding-left: 120px;
   padding-top: 46px;
   &__content {
     padding-top: 72px;
@@ -377,10 +376,12 @@ $cart-background: rgb(255, 255, 255);
     order: 1;
     flex-grow: 0;
     margin: 36px 0px;
+    border: none;
     cursor: pointer;
     &:hover {
       background-color: white;
       color: black;
+      border: 1px solid rgba(0, 0, 0, 1);
     }
   }
   &__item {
@@ -418,4 +419,4 @@ $cart-background: rgb(255, 255, 255);
 }
 // @import "tablet";
 @import "mobile";
-@import "stars";
+
