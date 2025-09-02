@@ -2,12 +2,8 @@
   .body {
     overflow-x: hidden;
     min-width: 343px;
-    
   }
-  .center {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+
   .star {
     display: none;
   }
@@ -15,13 +11,12 @@
   .mobstar {
     display: inherit;
     &__1 {
-        position: absolute;
-        width: 223.52px;
-        height: 238.57px;
-        right: 0;
-        left: 225px;
-        top: -63px;
-        transform: rotate(-0.32deg);
+      position: absolute;
+      width: 224px;
+      height: 239px;
+      right: -80px;
+      top: -83px;
+      transform: rotate(-0.32deg);
     }
     &__2 {
       position: absolute;
@@ -67,29 +62,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    align-content: center;
     height: 700px;
-    
-    
-    
 
     &__content {
       width: 343px;
-      height: 371px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 36px;
-      padding-top: 134px;
-      padding-left: 0;
-      padding-bottom: 131px;
+      padding-top: 147px;
     }
     &__button {
       width: 285px;
       height: 55px;
       font-size: 16px;
-      
     }
   }
   .stripe {
@@ -111,16 +98,18 @@
     font-family: Montserrat;
     font-weight: 700;
     font-size: 16px;
-    
-    &__word{
-        font-size: 16px;
+
+    &__word {
+      font-size: 16px;
     }
-    
+    &__star {
+      display: none;
+    }
+    &__starMob {
+      display: block;
+    }
   }
 
-  .about {
-    display: none;
-  }
   .title {
     &__header {
       color: rgb(32, 32, 39);
@@ -139,31 +128,12 @@
       line-height: 20px;
       letter-spacing: 0px;
       text-align: center;
+      width: 296px;
     }
   }
 
   // вторая страница
-  .mini-games {
-    padding-left: 16px;
-    padding-right: 16px;
-    overflow-x: hidden;
-    &__header {
-      color: rgb(255, 255, 255);
-      font-family: Montserrat;
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 49px;
-      letter-spacing: 0px;
-      text-align: left;
-      padding-top: 16px;
-    }
-    &__content {
-      padding-top: 48px;
-      width: 343px;
-      padding-bottom: 10px;
-      row-gap: 24px;
-    }
-  }
+
   .game-block {
     width: 343px;
     flex-direction: column-reverse;
@@ -186,6 +156,7 @@
       letter-spacing: 0px;
       text-align: left;
       padding-top: 15px;
+      width: 285px;
     }
     &__button {
       color: rgb(255, 255, 255);
@@ -233,6 +204,145 @@
       line-height: 20px;
       letter-spacing: 0px;
       text-align: center;
+    }
+  }
+  .stripe__star {
+    width: 20px;
+    height: 20px;
+  }
+
+  .mini-games {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+// скрытие большой звезды
+@media (max-width: 1565px) {
+  .star__1 {
+    display: none;
+  }
+}
+// скрытие звезд и блока об играх
+@media (max-width: 1402px) {
+  .star {
+    display: none;
+  }
+  .mini-games {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 49px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+  .about {
+    display: none;
+  }
+}
+// разрешения для блока игр
+@media (max-width: 1230px) {
+  .game-block {
+    width: 343px;
+    flex-direction: column-reverse;
+    &__header {
+      color: rgb(32, 32, 39);
+      font-family: Montserrat;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 39px;
+      letter-spacing: 0px;
+      text-align: left;
+      padding-top: 16px;
+    }
+    &__heading {
+      color: rgb(0, 0, 0);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: left;
+      padding-top: 15px;
+      width: 285px;
+    }
+    &__button {
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 141.69%;
+      letter-spacing: 0%;
+      text-align: center;
+      box-sizing: border-box;
+      border: 1px solid rgb(32, 32, 39);
+      border-radius: 60px;
+      background: rgb(32, 32, 39);
+      width: 285px;
+      height: 55px;
+      margin-bottom: 0;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+    &__item {
+      width: 284px;
+      display: flex;
+      flex-direction: column;
+      padding: 29px;
+      padding-top: 14px;
+      padding-left: 30px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    &__content {
+      width: 343px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 36px;
+      padding-top: 147px;
+      padding-left: 0;
+      margin: auto;
+      
+    }
+    &__button {
+      width: 285px;
+      height: 55px;
+      font-size: 16px;
+    }
+  }
+  .title {
+    &__header {
+      color: rgb(32, 32, 39);
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 49px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+    &__description {
+      color: rgb(32, 32, 39);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: center;
+      width: 296px;
     }
   }
 }

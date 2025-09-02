@@ -20,6 +20,11 @@ body {
   font-weight: bold;
 }
 
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 .main {
   height: 800px;
   background-image: url(./content/background_main\ копия.jpg);
@@ -28,9 +33,6 @@ body {
   background-size: cover;
   position: relative;
   overflow: hidden;
-}
-.main__content {
-  padding-left: 120px;
 }
 .main__button {
   position: static;
@@ -59,7 +61,6 @@ body {
   color: black;
 }
 .main__content {
-  width: 769px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -79,6 +80,7 @@ body {
   letter-spacing: 0px;
   text-align: left;
   padding-bottom: 24px;
+  max-width: 768px;
 }
 .title__description {
   color: rgb(32, 32, 39);
@@ -88,6 +90,7 @@ body {
   line-height: 32px;
   letter-spacing: 0px;
   text-align: left;
+  max-width: 720px;
 }
 
 /* Полоса для анимации */
@@ -108,6 +111,8 @@ body {
   align-content: center;
   flex-wrap: wrap;
   overflow: hidden;
+  left: 50%;
+  transform: translate(-50%);
 }
 .stripe__word {
   color: rgb(32, 32, 39);
@@ -119,9 +124,11 @@ body {
   text-align: left;
   text-transform: uppercase;
 }
+.stripe__starMob {
+  display: none;
+}
 
 .about {
-  padding-left: 120px;
   background-color: rgb(32, 32, 39);
   background-size: cover;
   padding-top: 94px;
@@ -214,6 +221,7 @@ body {
        column-gap: 32px;
   padding-bottom: 50px;
   max-width: 1440px;
+  min-width: 1200px;
   z-index: 2;
 }
 .game__cart {
@@ -296,7 +304,6 @@ body {
 .mini-games {
   background-color: rgb(32, 32, 39);
   background-size: cover;
-  padding-left: 120px;
   padding-top: 46px;
 }
 .mini-games__content {
@@ -366,11 +373,13 @@ body {
   order: 1;
   flex-grow: 0;
   margin: 36px 0px;
+  border: none;
   cursor: pointer;
 }
 .game-block__button:hover {
   background-color: white;
   color: black;
+  border: 1px solid rgb(0, 0, 0);
 }
 .game-block__item {
   padding: 48px;
@@ -412,10 +421,6 @@ body {
     overflow-x: hidden;
     min-width: 343px;
   }
-  .center {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
   .star {
     display: none;
   }
@@ -424,11 +429,10 @@ body {
   }
   .mobstar__1 {
     position: absolute;
-    width: 223.52px;
-    height: 238.57px;
-    right: 0;
-    left: 225px;
-    top: -63px;
+    width: 224px;
+    height: 239px;
+    right: -80px;
+    top: -83px;
     transform: rotate(-0.32deg);
   }
   .mobstar__2 {
@@ -474,20 +478,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    align-content: center;
     height: 700px;
   }
   .main__content {
     width: 343px;
-    height: 371px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 36px;
-    padding-top: 134px;
-    padding-left: 0;
-    padding-bottom: 131px;
+    padding-top: 147px;
   }
   .main__button {
     width: 285px;
@@ -518,8 +518,11 @@ body {
   .stripe__word {
     font-size: 16px;
   }
-  .about {
+  .stripe__star {
     display: none;
+  }
+  .stripe__starMob {
+    display: block;
   }
   .title__header {
     color: rgb(32, 32, 39);
@@ -538,27 +541,7 @@ body {
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
-  }
-  .mini-games {
-    padding-left: 16px;
-    padding-right: 16px;
-    overflow-x: hidden;
-  }
-  .mini-games__header {
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 49px;
-    letter-spacing: 0px;
-    text-align: left;
-    padding-top: 16px;
-  }
-  .mini-games__content {
-    padding-top: 48px;
-    width: 343px;
-    padding-bottom: 10px;
-    row-gap: 24px;
+    width: 296px;
   }
   .game-block {
     width: 343px;
@@ -583,6 +566,7 @@ body {
     letter-spacing: 0px;
     text-align: left;
     padding-top: 15px;
+    width: 285px;
   }
   .game-block__button {
     color: rgb(255, 255, 255);
@@ -630,5 +614,134 @@ body {
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
+  }
+  .stripe__star {
+    width: 20px;
+    height: 20px;
+  }
+  .mini-games {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 1565px) {
+  .star__1 {
+    display: none;
+  }
+}
+@media (max-width: 1402px) {
+  .star {
+    display: none;
+  }
+  .mini-games {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mini-games__header {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .about {
+    display: none;
+  }
+}
+@media (max-width: 1230px) {
+  .game-block {
+    width: 343px;
+    flex-direction: column-reverse;
+  }
+  .game-block__header {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 16px;
+  }
+  .game-block__heading {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 15px;
+    width: 285px;
+  }
+  .game-block__button {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    width: 285px;
+    height: 55px;
+    margin-bottom: 0;
+  }
+  .game-block__button:hover {
+    background-color: black;
+    color: white;
+  }
+  .game-block__item {
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    padding: 29px;
+    padding-top: 14px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .main__content {
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    padding-top: 147px;
+    padding-left: 0;
+    margin: auto;
+  }
+  .main__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .title__header {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .title__description {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 296px;
   }
 }/*# sourceMappingURL=style.css.map */
