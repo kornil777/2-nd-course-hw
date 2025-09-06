@@ -88,4 +88,84 @@ function Game2task() {
             }
         }
 
-      
+// 3-я игра Переверни текст
+
+function startGame3() {
+    const userText = prompt('Введите текст, который нужно перевернуть:');
+    
+    if (userText === null) {
+        return;
+    }
+    
+    if (userText.trim() === '') {
+        alert('Вы не ввели текст! Попробуйте снова.');
+        return;
+    }
+    
+   
+    const reversedText = userText.split('').reverse().join('');
+    
+    alert(`Оригинальный текст: ${userText}\nПеревернутый текст: ${reversedText}`);
+}
+// 5 -я игра
+const quiz = [
+    {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+        correctAnswer: 2 // номер правильного ответа
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
+
+function startGame5() {
+    let correctAnswers = 0;
+    
+    for (let i = 0; i < quiz.length; i++) {
+        const currentQuestion = quiz[i];
+        
+        let questionText = `Вопрос ${i + 1}/${quiz.length}:\n${currentQuestion.question}\n\n`;
+        questionText += currentQuestion.options.join('\n');
+        questionText += '\n\nВведите номер правильного ответа:';
+        
+        const userAnswer = parseInt(prompt(questionText));
+    
+        if (userAnswer === currentQuestion.correctAnswer) {
+            correctAnswers++;
+            alert('Правильно!');
+        } else {
+            alert(`Неправильно. Правильный ответ: ${currentQuestion.correctAnswer}`);
+        }
+    }
+    
+    showQuizResult(correctAnswers);
+}
+
+
+function showQuizResult(correctAnswers) {
+    const totalQuestions = quiz.length;
+    const percentage = Math.round((correctAnswers / totalQuestions) * 100);
+    
+    let resultMessage = `ВИКТОРИНА ЗАВЕРШЕНА!\n\n`;
+    resultMessage += `Правильных ответов: ${correctAnswers} из ${totalQuestions}\n`;
+    resultMessage += `Процент правильных ответов: ${percentage}%\n\n`;
+    
+    // Добавляем оценку в зависимости от результата
+    if (correctAnswers === totalQuestions) {
+        resultMessage += ' Отлично! Вы отлично ответили на все вопросы!';
+    } else if (correctAnswers >= totalQuestions / 2) {
+        resultMessage += 'Хороший результат!';
+    } else {
+        resultMessage += ' Попробуйте еще раз!';
+    }
+    
+    alert(resultMessage);
+}
