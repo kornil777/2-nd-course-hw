@@ -110,7 +110,7 @@ function startGame3() {
 // 5 -я игра
 const quiz = [
     {
-        question: "Какой цвет небо?",
+        question: "Какой цвет неба?",
         options: ["1. Красный", "2. Синий", "3. Зеленый"],
         correctAnswer: 2 // номер правильного ответа
     },
