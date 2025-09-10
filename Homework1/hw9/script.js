@@ -12,6 +12,7 @@ changeColorBtnEl.addEventListener("click", function (e) {
   text2El.style.color = "blue";
 });
 
+
 // Задание 3
 const changeTextBtnEl = document.querySelector(".changeTextBtn");
 changeTextBtnEl.addEventListener("click", function (e) {
