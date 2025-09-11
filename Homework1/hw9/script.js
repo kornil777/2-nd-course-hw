@@ -1,8 +1,14 @@
 // Задание 1
-const btnRemoveEl = document.querySelector(".btn-remove");
-btnRemoveEl.addEventListener("click", function (e) {
-  const text1El = document.querySelector(".text1");
-  text1El.remove();
+const toggleButtonEl = document.querySelector(".toggleButton");
+toggleButtonEl.addEventListener("click", function (e) {
+  const header1El = document.querySelector(".header1");
+  header1El.classList.toggle("hidden");
+
+  if (header1El.classList.contains("hidden")) {
+    toggleButtonEl.textContent = "Показать заголовок";
+  } else {
+    toggleButtonEl.textContent = "Скрыть заголовок";
+  }
 });
 
 // Задание 2
@@ -11,7 +17,6 @@ changeColorBtnEl.addEventListener("click", function (e) {
   const text2El = document.querySelector(".text2");
   text2El.style.color = "blue";
 });
-
 
 // Задание 3
 const changeTextBtnEl = document.querySelector(".changeTextBtn");
